@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 引入约束，在spring-framework-3.2.0.RELEASE\docs\spring-framework-reference\html目录中用浏览器打开 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd"> <!-- bean definitions here -->
+
+<!-- 开启aop操作 -->
+<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+<!-- 创建对象 -->
+<bean id="book" class="aop.Book"></bean>
+<bean id="mybook" class="aop.MyBook"></bean>
+ </beans>
